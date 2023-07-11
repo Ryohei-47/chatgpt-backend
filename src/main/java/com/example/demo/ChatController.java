@@ -12,6 +12,12 @@ public class ChatController {
     @Autowired
     private ChatService chatService;
 
+    //Example
+    @RequestMapping(value = "/hello")
+    public String hello(){
+        return "hello";
+    }
+
     //チャットAPI
     @RequestMapping(value = "/chat",method = RequestMethod.POST)
     public String chat(ChatParameter parameter){
