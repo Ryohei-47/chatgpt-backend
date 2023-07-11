@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Component
-public class ChatptConfig {
+public class ChatgptConfig {
 
     //APIKEY項目名
     public static String APIKEY = "api-key";
