@@ -12,25 +12,30 @@ import lombok.Data;
 @Data
 public class ChatParameter {
 
-    @JsonProperty("prompt")
-    private String prompt;
+    //@JsonProperty("message")
+    private List<Message> messages;
 
-    //private int maxTokens;
-    @JsonProperty("temperature")
-    private int temperature;
+    //@JsonProperty("temperature")
+    private double temperature;
 
-    @JsonProperty("top_p")
-    private int top_p;
+    private Integer n;
 
-    @JsonProperty("logit_bias")
-    private Map<String, Integer> logitBias;
+    private Boolean stream;
 
-    @JsonProperty("stop")
+    //@JsonProperty("stop")
     private List<String> stop;
+
+    @JsonProperty("max_tokens")
+    private int maxTokens;
 
     @JsonProperty("presence_penalty")
     private int presencePenalty;
 
     @JsonProperty("frequency_penalty")
     private int frequencyPenalty;
+
+    @JsonProperty("logit_bias")
+    private Map<String, Integer> logitBias;
+
+    private String user;
 }
