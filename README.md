@@ -1,4 +1,4 @@
-# spring-chatgpt（メモ）
+# spring-chatgpt（メモ）masterブランチに直プッシュ禁止
 
 ### Java,Mavenのインストール手順
 （書く予定）
