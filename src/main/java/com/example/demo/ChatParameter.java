@@ -12,10 +12,10 @@ import lombok.Data;
 @Data
 public class ChatParameter {
 
-    //@JsonProperty("message")
+    @JsonProperty("messages")
     private List<Message> messages;
 
-    //@JsonProperty("temperature")
+    @JsonProperty("temperature")
     private double temperature;
 
     private Integer n;
