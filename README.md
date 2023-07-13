@@ -4,7 +4,7 @@
 （書く予定）
 ### curl 成功例
 ・直接Azure側のAPIを呼び出すコマンド<br>
-curl -X POST https://openai-ind-chatbot.openai.azure.com/openai/deployments/ind-chatbot/chat/completions?api-version=2023-03-15-preview -H "Content-Type:application/json" -H "api-key: 0c4460ec3e4b4382863c41dea7cb4485" -d "{\"messages\":[{\"role\":\"user\", \"content\":\"ジョジョ風でなにか言ってください\"}], \"max_tokens\":"300"}"
+curl -X POST https://openai-ind-chatbot.openai.azure.com/openai/deployments/ind-chatbot/chat/completions?api-version=2023-03-15-preview -H "Content-Type:application/json" -H "api-key: 0c4460ec3e4b4382863c41dea7cb4485" -d "{\\"messages\\":[{\\"role\\":\\"user\\", \\"content\\":\\"ジョジョ風でなにか言ってください\\"}], \\"max_tokens\\":"300"}"
 <br><br>
 （応答例）<br>
 {"id":"chatcmpl-7bd9Ld6xPq6hzZ8CflCGim2GLjxA1","object":"chat.completion","created":1689202983,"model":"gpt-35-turbo","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"ェ！　オレはスタンド能力を持っている！　その名も「フューチャー・アシスタント」！　さあ、どんなことでも言ってくれ！　オレがあなたを助けてみせる！"}}],"usage":{"completion_tokens":68,"prompt_tokens":21,"total_tokens":89}}
