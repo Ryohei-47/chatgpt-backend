@@ -10,23 +10,32 @@ import lombok.Data;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Data
-public class ChatParameter {
+public class CompletionsParameter {
 
-    @JsonProperty("messages")
-    private List<Message> messages;
+    @JsonProperty("prompt")
+    private List<String> prompt;
+
+    @JsonProperty("max_tokens")
+    private int maxTokens;
 
     @JsonProperty("temperature")
     private double temperature;
+
+    @JsonProperty("top_p")
+    private double topP;
+
+    @JsonProperty("logit_bias")
+    private Map<String, Integer> logitBias;
+
+    private String user;
 
     private Integer n;
 
     private Boolean stream;
 
-    //@JsonProperty("stop")
-    private List<String> stop;
+    private Integer logrprobs;
 
-    @JsonProperty("max_tokens")
-    private int maxTokens;
+    private List<String> stop;
 
     @JsonProperty("presence_penalty")
     private int presencePenalty;
@@ -34,8 +43,5 @@ public class ChatParameter {
     @JsonProperty("frequency_penalty")
     private int frequencyPenalty;
 
-    @JsonProperty("logit_bias")
-    private Map<String, Integer> logitBias;
-
-    private String user;
+    private Integer bestOf;
 }

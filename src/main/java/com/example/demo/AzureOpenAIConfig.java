@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Component
-public class ChatgptConfig {
+public class AzureOpenAIConfig {
 
     //APIKEY項目名
     public static String APIKEY = "api-key";
@@ -17,7 +17,7 @@ public class ChatgptConfig {
     private String completionsUrl;
 
     @Value("${azureopenai.completions.key}")
-    private String completionslKey;
+    private String completionsKey;
 
     //チャットAPI
     @Value("${azureopenai.chatcompletions.url}")
