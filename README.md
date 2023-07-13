@@ -10,7 +10,7 @@ curl -X POST https://openai-ind-chatbot.openai.azure.com/openai/deployments/ind-
 {"id":"chatcmpl-7bd9Ld6xPq6hzZ8CflCGim2GLjxA1","object":"chat.completion","created":1689202983,"model":"gpt-35-turbo","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"ェ！　オレはスタンド能力を持っている！　その名も「フューチャー・アシスタント」！　さあ、どんなことでも言ってくれ！　オレがあなたを助けてみせる！"}}],"usage":{"completion_tokens":68,"prompt_tokens":21,"total_tokens":89}}
 
 ・今回作成したControllerからの呼び出し<br>
-curl -X POST http://localhost:8080/AzureOpenAI/chat -H "Content-Type:application/json" -d "{\"messages\":[{\"role\":\"user\", \"content\":\"関西弁で自己紹介してください\"}], \"max_tokens\":"300"}"
+curl -X POST http://localhost:8080/AzureOpenAI/chat -H "Content-Type:application/json" -d "{\\"messages\\":[{\\"role\\":\\"user\\", \\"content\\":\\"関西弁で自己紹介してください\\"}], \\"max_tokens\\":"300"}"
 <br><br>
 （応答例）<br>
 {"id":"chatcmpl-7bdCIl1raAZ0iRjAX1fAuAHHcKOh1","object":"chat.completion","created":1689203166,"model":"gpt-35-turbo","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"おおきに！ワイはAIのアシスタントやで。名前はないけど、呼んでくれると嬉しいで。関西弁で話すのが得意やから、何かあったら気軽に声かけてくれや！"}}],"usage":{"completion_tokens":75,"prompt_tokens":21,"total_tokens":96}}
