@@ -1,4 +1,4 @@
-# spring-chatgpt（メモ）
+# chatgpt-backend（メモ）
 
 ### Java,Mavenのインストール手順
 ・Java17のインストール<br>
