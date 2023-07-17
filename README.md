@@ -4,10 +4,10 @@
 ・Java17のインストール<br>
 ・Mavenのインストール<br>
 
-pathの通し方
-```setx /M JAVA_HOME "C:\Program Files\Java\jdk{バージョン番号}"
-setx /M Path "%Path%;%JAVA_HOME%\bin;"
-```
+pathの通し方<br>
+```setx /M JAVA_HOME "C:\Program Files\Java\jdk{バージョン番号}"```
+
+```setx /M Path "%Path%;%JAVA_HOME%\bin;" ```
 
 
 ### curl 成功例（コマンドプロンプトからなのでエスケープシーケンス考慮する）
