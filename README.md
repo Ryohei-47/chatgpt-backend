@@ -31,3 +31,6 @@ curl -X POST http://localhost:8080/AzureOpenAI/chat/completions -H "Content-Type
 	<artifactId>spring-boot-starter-web</artifactId>
 </dependency>
 ```
+
+### nignx構築
+https://weblabo.oscasierra.net/nginx-centos7-install/
