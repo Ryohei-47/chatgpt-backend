@@ -41,3 +41,5 @@ CentOS7系で構築する時の注意点<br>
 firewall-cmd --add-port=80（開きたいポート番号）/tcp --zone=public --permanent
 firewall-cmd --reload //反映
 ```
+### nignxやSpring bootのログをストレージアカウントにマウントする
+
