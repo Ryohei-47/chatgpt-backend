@@ -34,3 +34,10 @@ curl -X POST http://localhost:8080/AzureOpenAI/chat/completions -H "Content-Type
 
 ### nignx構築
 https://weblabo.oscasierra.net/nginx-centos7-install/
+<br>
+CentOS7系で構築する時の注意点<br>
+デフォルトでfirewalldが働いていてアクセス制御されているので以下コマンドを実行<br>
+```
+firewall-cmd --add-port=80（開きたいポート番号）/tcp --zone=public --permanent
+firewall-cmd --reload //反映
+```
