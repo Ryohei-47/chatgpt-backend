@@ -49,4 +49,5 @@ https://learn.microsoft.com/ja-jp/azure/storage/files/storage-how-to-use-files-l
 ```
 ###マウントすうために必要な情報
 /etc/fstab
-/etc/smbcredentials/stindchatbotdata.cred```
+/etc/smbcredentials/stindchatbotdata.cred
+```
