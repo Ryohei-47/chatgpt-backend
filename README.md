@@ -42,5 +42,11 @@ firewall-cmd --add-port=80（開きたいポート番号）/tcp --zone=public --
 firewall-cmd --reload //反映
 ```
 ### nignxやSpring bootのログをストレージアカウントにマウントする
-・Azure-cliのインストール(dnf→yumに置き換えて実行する)<br>
-https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli-linux?pivots=dnf
+・azure-cliのインストール(dnf→yumに置き換えて実行する)<br>
+https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli-linux?pivots=dnf<br>
+・Azureのストレージアカウントにログをマウントする<br>
+https://learn.microsoft.com/ja-jp/azure/storage/files/storage-how-to-use-files-linux?tabs=RHEL%2Csmb311
+```
+###マウントすうために必要な情報
+/etc/fstab
+/etc/smbcredentials/stindchatbotdata.cred```
