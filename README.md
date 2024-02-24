@@ -10,10 +10,10 @@ pathの通し方<br>
 ```setx /M Path "%Path%;%JAVA_HOME%\bin;" ```
 
 ### Springbootでローカル軌道の仕方
-1.プロジェクトのビルド
+1.プロジェクトのビルド<br>
 ```mvn clean install```
 
-2.起動
+2.起動<br>
 ```java -jar ./target/demo-0.0.1-SNAPSHOT.jar```
 
 3.8080ポートで確認
